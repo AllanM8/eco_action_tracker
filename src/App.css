@@ -1,38 +1,94 @@
-.App {
+.app-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.action-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for 3 cards */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards in the grid */
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+
+.action-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* display: grid;
+  grid-row: span; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.action-card h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.action-card p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.action-card button {
+  background-color: #28a745;
   color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.action-card button:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.action-list .action-card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.progress-bar {
+  height: 15px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #f39c12;
+  border-radius: 10px;
+}
+
+.impact-summary {
+  margin-top: 20px;
+}
+
+.clear-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  background-color: #c82333;
 }

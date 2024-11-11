@@ -1,0 +1,56 @@
+.impact-summary-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .tracked-actions {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .action-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .action-list-item button {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+  }
+  
+  .action-list-item button:hover {
+    color: #c0392b;
+  }
+  
+  .clear-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clear-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .impact-result {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #34495e;
+  }
+  
